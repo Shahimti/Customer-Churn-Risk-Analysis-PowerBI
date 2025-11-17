@@ -169,9 +169,9 @@ The dashboard includes the following key visuals:
 This repository contains the following files:
 - README.md — Project documentation
 
-- Dashboard.pdf — A PDF export of the Power BI dashboard
+- Customer Churn Analysis Dashboard.pdf — A PDF export of the Power BI dashboard
 
-- Telecom_Churn.pbix — The Power BI file for interactive exploration
+- Customer Churn Analysis.pbit — The Power BI file for interactive exploration
 
 **Interactivity**
 
