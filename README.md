@@ -1,6 +1,6 @@
 **Customer Churn Analysis (Power BI)**
 
-#Live Interactive Dashboard
+**Live Interactive Dashboard**
 
 [Click here](https://app.powerbi.com/view?r=eyJrIjoiMjQ0YjNmNGQtNTg2MS00NjExLWJkNzAtNmQwMjYzZWU2NzUyIiwidCI6IjljYTMxODVjLTIzYzEtNDg5Yy1iOTk1LTFlNGVjYWM2MWM3YiIsImMiOjEwfQ%3D%3D)
 
