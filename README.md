@@ -1,182 +1,206 @@
-**Customer Churn Analysis (Power BI)**
+# Customer Churn Analysis - Northbridge Communications
 
-**Live Interactive Dashboard**
+## Power BI - Case Study
 
-[Click here](https://app.powerbi.com/view?r=eyJrIjoiMjQ0YjNmNGQtNTg2MS00NjExLWJkNzAtNmQwMjYzZWU2NzUyIiwidCI6IjljYTMxODVjLTIzYzEtNDg5Yy1iOTk1LTFlNGVjYWM2MWM3YiIsImMiOjEwfQ%3D%3D)
+Live Interactive Dashboard 
 
+**Click Here**
 
-**Project Overview**
+1. ## Business Background & Problem Statement
 
-- This project focuses on analyzing customer churn to identify key factors that influence how many customers stay or leave by different segmentations. Using Power BI, the goal was to create an interactive dashboard that highlights patterns in customer behavior and helps explain which customer segments have the highest churn.
+Northbridge Communications is a subscription-based telecommunications provider operating under recurring revenue contracts.
 
-**Project Description**
+The company began experiencing rising customer churn, leading to instability in recurring revenue and reduced customer lifetime value.
 
-- The purpose of this project is to explore churn behavior within a telecom dataset that was sourced from Kaggle and develop insights that can support retention strategies. The dashboard allows users to slice the data by contract type, payment method, gender, tenure, and internet service.
+Leadership identified the following concerns:
 
-The visuals were designed to answer questions such as:
+- Increasing churn impacting revenue predictability
 
-- Which customer segments churn the most?
+- High volatility among short-term contract customers
 
-- How do contract type and payment method influence churn?
+- Limited visibility into financially exposed customer segments
 
-- What combinations of features lead to higher churn?
+- No structured quantification of churn-driven revenue loss
 
-- How does tenure affect customer behavior?
+- Lack of clear insight into behavioral churn drivers
 
-This one-page dashboard brings together multiple perspectives of the data and is fully interactive to support dynamic analysis.
+Northbridge required a structured analytics solution to:
 
-**Dataset Information**
+- Identify high-risk customer segments
 
-Dataset Source: Kaggle Open Data Set
+- Quantify revenue exposure
 
-**Data Cleaning Steps**
+- Understand behavioral drivers of churn
 
-Several cleaning steps were performed in Power Query before building the visuals:
+- Simulate financial impact from improved retention
 
-- Removed duplicate and empty Customer ID rows
+This case study was developed to translate subscription data into measurable business risk and strategic insight.
 
-- Standardized all Yes/No fields
+2. ## Data Structure & Model Overview
 
-- Replaced “No Internet Service” and “No Phone Service” with “No” for consistency
+[INSERT POWER BI SEMANTIC MODEL SCREENSHOT HERE]
 
-- Created Tenure Group buckets (0–1, 1–2, 2–4, 4–6 years)
+The dataset represents customer-level subscription data enriched with segmentation logic and financial measures.
 
-- Categorized Contract Type into Short Term and Long Term
+To better simulate real enterprise-level data conditions, the dataset was refined and restructured to introduce transformation and categorization challenges. These were resolved through Power Query transformations and DAX-based modeling techniques, reflecting real-world data preparation workflows.
 
-- Grouped Payment Method into Automatic, Mailed Check, Electronic Check
+### Core Data Categories
 
-- Ensured Monthly Charges and Total Charges were converted to numeric formats
-
-- Removed blank Total Charges rows
-
-- Created additional helper columns for modeling and visualization
-
-**Key DAX Measures**
-
-These measures were created to support the dashboard:
-
-Total Customers =
-DISTINCTCOUNT('Teleco Raw Data'[Customer ID])
-
-Churn Customers =
-CALCULATE(
-    DISTINCTCOUNT('Teleco Raw Data'[Customer ID]),
-    'Teleco Raw Data'[Churn] = "Yes"
-)
-
-NonChurn Customers =
-[Total Customers] - [Churn Customers]
-
-Churn Rate (%) =
-DIVIDE([Churn Customers], [Total Customers], 0)
-
-Retention Rate =
-1 - [Churn Rate (%)]
-
-Avg Monthly Charges =
-AVERAGE('Teleco Raw Data'[Monthly Charges])
-
-Avg Total Charges =
-AVERAGE('Teleco Raw Data'[Total Charges])
-
-**Dashboard Overview**
-
-The dashboard includes the following key visuals:
-
-**Slicers:**
-
-- Contract Type
-
-- Payment Group
+**Customer Demographics**
 
 - Gender
 
+- Senior Citizen
+
+- Partner
+
+- Dependents
+
+**Service Features**
+
+- Internet Type (DSL, Fiber, None)
+
+- Online Security
+
+- Device Protection
+
+- Tech Support
+
+- Streaming Services
+
+**Contract & Billing**
+
+- Contract Type (Short Term / Long Term)
+
+- Payment Group (Electronic Check / Automatic / Mailed Check)
+
 - Paperless Billing
 
-- Tenure Group
+**Financial Metrics**
 
-- Internet Type
+- Monthly Charges
 
-**Charts**
+- Total Charges (treated as Lifetime Revenue)
 
-- Clustered Bar Chart: Churn Customers by Tenure Group -** Displays churn counts by tenure segments and reveals which tenure ranges have the highest churn**
+- Churn Status
 
-- Clustered Column Chart: Churn Rate (%) by Payment Group - **Compares churn rates across payment methods**
+**Data Preparation & Transformation**
 
-- Stacked Column Chart: Churn Customers by Contract Type - **Highlights churn distribution across short-term and long-term contracts**
+- Removed duplicate and blank customer records
 
-- Decomposition Tree: Analyzes churn customers and identifies the strongest contributing factors (Contract Type, Payment Group, Internet Type, Monthly Charges, etc.).
+- Standardized categorical fields
 
-- Matrix: Churn Rate by Contract Type and Internet Type - **Provides a cross-segmentation view to understand how internet service type interacts with contract type in explaining churn**
+- Converted financial columns to numeric formats
 
-**KPI Cards**:
+- Created tenure buckets (0–1, 1–2, 2–4, 4–6 years)
 
-- Total Customers
+- Grouped payment methods into behavioral categories
 
-- Churn Rate (%)
+- Classified contracts into short-term and long-term
 
-- Churn Customers
+- Built churn rate, revenue exposure, and segmentation measures
 
-- Avg Monthly Charges
+- Implemented what-if financial simulation parameters
 
-**Files in Repository**
+3. ## Executive Summary
 
-This repository contains the following files:
-- README.md — Project documentation
+[INSERT KPI CARDS SCREENSHOT – PAGE 1 KPI SECTION]
 
-- Customer Churn Analysis Dashboard.pdf — A PDF export of the Power BI dashboard.
+Northbridge Communications currently serves 5,074 active customers, generating 11.53M in total lifetime revenue.
 
-- Teleco Raw Data.csv - A CSV file that shows the raw file of this dataset.
+However:
 
-**Interactivity**
+- 26.1% of customers have churned
 
-The dashboard is fully interactive. All slicers dynamically update the visuals, allowing users to analyze customer churn across different segments.
+- 2.05M in revenue has been lost
 
-Examples of interactions include:
+- 17.8% of total revenue is exposed to churn risk
 
-- Filtering churn behavior by gender or payment group
+The analysis reveals that churn is concentrated within specific contractual and behavioral segments rather than evenly distributed across the customer base.
 
-- Observing how churn changes for specific internet types
+Additionally, a scenario-based churn reduction model demonstrates that even modest retention improvements could recover over 100K in revenue, highlighting the measurable financial value of targeted intervention.
 
-- Exploring high-churn customer segments using the decomposition tree
+4. ## Insights Deep Dive
 
-- Comparing churn between long-term and short-term contracts
+**Contract Risk Analysis**
 
-**Findings From the Project**
+[INSERT SCREENSHOT – Churned Revenue by Contract Type]
 
-Below are the types of insights observed from the dashboard. 
+Short-term contracts account for the largest share of churned revenue (1.37M), indicating elevated volatility among customers without long-term commitment.
 
-- Customers with short-term contracts had a higher churn rate of **0.27%** compared to long-term contract customers.
+Long-term contracts demonstrate significantly stronger retention stability.
 
-- Payment method played a major role. Customers using Electronic Check showed a churn rate of **0.45%**, significantly higher than the other groups.
+**Payment Behavior Risk**
 
-- Tenure was strongly related to churn. Customers in the first 0–1 year tenure group churned at **0.47%**, while long-tenure customers had much lower churn.
+[INSERT SCREENSHOT – Churn Risk by Payment Type]
 
-- Fiber internet users showed higher churn in specific segments, especially when combined with **short-term contracts & electronic payment**.
+Electronic check customers show the highest churn rate (44.5%), materially higher than automatic payment users.
 
-- The decomposition tree identified the top churn segment as **Short Term - Contract Type + Electronic - Payment Group + Fiber - Internet Type**.
+Billing behavior strongly correlates with retention stability.
 
-- Average monthly charges for churned customers were approximately **$80** compared to **$61.50** for retained customers.
+**Tenure Lifecycle Impact**
 
-These findings help identify which customer groups should be targeted for retention strategies.
+[INSERT SCREENSHOT – Churn Rate by Customer Tenure]
 
-**Tools and Skills**
+Churn risk decreases as tenure increases:
 
-- Power BI Desktop
+0–1 year: 46.5%
+1–2 years: 29.1%
+2–4 years: 18.8%
+4–6 years: 10.0%
 
-- Power Query for data cleaning
+Churn is heavily front-loaded within early customer lifecycle stages.
 
-- DAX for calculated measures
+**Revenue–Risk Positioning Matrix**
 
-- Data modeling
+[INSERT SCREENSHOT – Revenue–Risk Positioning Matrix]
 
-- Dashboard design
+This matrix identifies high-revenue and high-risk segments, enabling prioritization of retention strategies where financial exposure is greatest.
 
-- Exploratory data analysis
+**Revenue Drivers of Customer Churn**
 
-**Author Details**
+[INSERT SCREENSHOT – Decomposition Tree]
 
-Project created by:Shah Imtiaz
-Mail: Shahimti12@gmail.com
+The decomposition analysis isolates the highest revenue-loss path:
+
+Short Term → Electronic Check → Fiber → Early Tenure
+
+Current exposure:
+
+- Revenue Lost: 2.05M
+- Revenue Lost %: 17.8%
+- Projected Revenue Saved (sample scenario): 102.46K
+
+6. ## Strategic Recommendations
+
+**Based on the findings, Northbridge Communications should:**
+
+- Incentivize migration from short-term to long-term contracts.
+
+- Encourage transition from electronic check to automatic payment methods.
+
+- Implement early-tenure engagement programs within the first 12 months.
+
+- Prioritize high-revenue fiber customers under short-term contracts for retention campaigns.
+
+- Use churn segmentation to allocate retention budgets efficiently.
+
+- These actions directly address identified revenue exposure segments.
+
+7. ## Assumptions & Limitations
+
+- Total Charges is treated as lifetime revenue.
+
+- Dataset does not include time-series churn events.
+
+- Revenue loss assumes churn leads to revenue discontinuation.
+
+What-if simulation is scenario-based and not predictive modeling.
 
 
+
+
+
+Or resume bullet upgrades aligned with this final version
+
+Your move.
