@@ -136,7 +136,13 @@ Current exposure:
 
 - Use churn segmentation to allocate retention budgets efficiently.
 
+## Assumptions & Limitations
 
+- Total Charges is treated as lifetime revenue.
+
+- What-if simulation is scenario-based and not predictive modeling.
+
+- Revenue loss assumes churn leads to revenue discontinuation 
 
 
 
