@@ -10,7 +10,7 @@ Live Interactive Dashboard
 
 Northbridge Communications is a subscription-based telecommunications provider operating under recurring revenue contracts.
 
-The company began experiencing rising customer churn, leading to instability in recurring revenue and reduced customer lifetime value.
+The company began experiencing rising customer churn, leading to instability in recurring revenue and reduced customer lifetime value
 
 Leadership identified the following concerns:
 
