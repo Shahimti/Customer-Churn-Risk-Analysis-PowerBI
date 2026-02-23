@@ -38,13 +38,13 @@ This case study was developed to translate subscription data into measurable bus
 
 ## Data Structure & Model Overview
 
-[INSERT POWER BI SEMANTIC MODEL SCREENSHOT HERE]
+[https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Data_Model.png]
 
 The dataset represents customer-level subscription data enriched with segmentation logic and financial measures.
 
 To better simulate real enterprise-level data conditions, the dataset was refined and restructured to introduce transformation and categorization challenges. These were resolved through Power Query transformations and DAX-based modeling techniques, reflecting real-world data preparation workflows.
 
-3. ## Executive Summary
+## Executive Summary
 
 [INSERT KPI CARDS SCREENSHOT – PAGE 1 KPI SECTION]
 
@@ -62,7 +62,7 @@ The analysis reveals that churn is concentrated within specific contractual and 
 
 Additionally, a scenario-based churn reduction model demonstrates that even modest retention improvements could recover over 100K in revenue, highlighting the measurable financial value of targeted intervention.
 
-4. ## Insights Deep Dive
+## Insights Deep Dive
 
 **Contract Risk Analysis**
 
@@ -113,7 +113,7 @@ Current exposure:
 - Revenue Lost %: 17.8%
 - Projected Revenue Saved (sample scenario): 102.46K
 
-6. ## Strategic Recommendations
+## Strategic Recommendations
 
 **Based on the findings, Northbridge Communications should:**
 
