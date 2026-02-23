@@ -58,6 +58,14 @@ The analysis reveals that churn is concentrated within specific contractual and 
 
 Additionally, a scenario-based churn reduction model demonstrates that even modest retention improvements could recover over 100K in revenue, highlighting the measurable financial value of targeted intervention.
 
+## Intended End User & Business Application
+
+This dashboard is designed for Northbridge Communications’ Retention Strategy and Revenue Operations teams.
+
+It supports monthly churn review meetings by identifying high-risk customer segments before renewal cycles and quantifying revenue exposure by contract, payment behavior, and tenure.
+
+The financial simulation model enables leadership to evaluate retention investment scenarios and prioritize intervention where projected revenue recovery is highest
+
 ## Insights Deep Dive
 
 **Contract Risk Analysis**
