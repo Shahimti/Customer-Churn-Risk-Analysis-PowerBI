@@ -150,7 +150,15 @@ Current exposure:
 
 - What-if simulation is scenario-based and not predictive modeling.
 
-- Revenue loss assumes churn leads to revenue discontinuation 
+- Revenue loss assumes churn leads to revenue discontinuation
+
+## Business Impact Summary
+
+This case study demonstrates how churn analytics can evolve from descriptive reporting into structured decision-support modeling.
+
+By combining risk segmentation, revenue exposure analysis and financial simulation, Northbridge Communications can shift retention strategy from reactive customer management to targeted revenue protection.
+
+The model highlights that churn mitigation is not merely a customer service issue; it is a capital allocation decision directly tied to revenue stability and long-term growth
 
 
 
