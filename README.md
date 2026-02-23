@@ -38,7 +38,7 @@ This case study was developed to translate subscription data into measurable bus
 
 ## Data Structure & Model Overview
 
-![image alt][https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Data_Model.png]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Data_Model.png)
 
 The dataset represents customer-level subscription data enriched with segmentation logic and financial measures.
 
@@ -46,7 +46,7 @@ To better simulate real enterprise-level data conditions, the dataset was refine
 
 ## Executive Summary
 
-[INSERT KPI CARDS SCREENSHOT – PAGE 1 KPI SECTION]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/KPI's.png)
 
 Northbridge Communications currently serves 5,074 active customers, generating 11.53M in total lifetime revenue.
 
@@ -66,7 +66,7 @@ Additionally, a scenario-based churn reduction model demonstrates that even mode
 
 **Contract Risk Analysis**
 
-[INSERT SCREENSHOT – Churned Revenue by Contract Type]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Churned%20Revenue%20by%20Contract%20.png)
 
 Short-term contracts account for the largest share of churned revenue (1.37M), indicating elevated volatility among customers without long-term commitment.
 
@@ -74,7 +74,7 @@ Long-term contracts demonstrate significantly stronger retention stability.
 
 **Payment Behavior Risk**
 
-[INSERT SCREENSHOT – Churn Risk by Payment Type]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Churned%20Risk%20by%20Payment%20.png)
 
 Electronic check customers show the highest churn rate (44.5%), materially higher than automatic payment users.
 
@@ -82,26 +82,29 @@ Billing behavior strongly correlates with retention stability.
 
 **Tenure Lifecycle Impact**
 
-[INSERT SCREENSHOT – Churn Rate by Customer Tenure]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Churn%20Rate%20by%20Customer%20Tenure%20.png)
 
 Churn risk decreases as tenure increases:
 
 0–1 year: 46.5%
+
 1–2 years: 29.1%
+
 2–4 years: 18.8%
+
 4–6 years: 10.0%
 
 Churn is heavily front-loaded within early customer lifecycle stages.
 
 **Revenue–Risk Positioning Matrix**
 
-[INSERT SCREENSHOT – Revenue–Risk Positioning Matrix]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Revenue%20Risk%20Positioning%20Matrix.png)
 
 This matrix identifies high-revenue and high-risk segments, enabling prioritization of retention strategies where financial exposure is greatest.
 
 **Revenue Drivers of Customer Churn**
 
-[INSERT SCREENSHOT – Decomposition Tree]
+![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Decompostion%20Tree.png)
 
 The decomposition analysis isolates the highest revenue-loss path:
 
@@ -110,7 +113,9 @@ Short Term → Electronic Check → Fiber → Early Tenure
 Current exposure:
 
 - Revenue Lost: 2.05M
+
 - Revenue Lost %: 17.8%
+
 - Projected Revenue Saved (sample scenario): 102.46K
 
 ## Strategic Recommendations
