@@ -1,6 +1,6 @@
-# Customer Churn Analysis - Northbridge Communications
+# Customer Churn Analysis 
 
-## Power BI - Case Study
+## Northbridge Communications | Power BI - Case Study
 
 Live Interactive Dashboard 
 
@@ -50,13 +50,9 @@ To better simulate real enterprise-level data conditions, the dataset was refine
 
 Northbridge Communications currently serves 5,074 active customers, generating 11.53M in total lifetime revenue.
 
-However:
+Churn has reached 26.1%, resulting in 2.05M in lost revenue and exposing 17.8% of total revenue to risk.
 
-- 26.1% of customers have churned
-
-- 2.05M in revenue has been lost
-
-- 17.8% of total revenue is exposed to churn risk
+This concentration of churn within specific contractual and behavioral segments creates measurable financial volatility rather than uniform customer attrition.
 
 The analysis reveals that churn is concentrated within specific contractual and behavioral segments rather than evenly distributed across the customer base.
 
@@ -68,7 +64,7 @@ Additionally, a scenario-based churn reduction model demonstrates that even mode
 
 ![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Churned%20Revenue%20by%20Contract%20.png)
 
-Short-term contracts account for the largest share of churned revenue (1.37M), indicating elevated volatility among customers without long-term commitment.
+Short-term contracts represent the primary revenue volatility driver, accounting for 1.37M in churned revenue - more than double long-term contract exposure.
 
 Long-term contracts demonstrate significantly stronger retention stability.
 
@@ -100,15 +96,17 @@ Churn is heavily front-loaded within early customer lifecycle stages.
 
 ![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Revenue%20Risk%20Positioning%20Matrix.png)
 
-This matrix identifies high-revenue and high-risk segments, enabling prioritization of retention strategies where financial exposure is greatest.
+The Revenue - Risk Positioning Matrix highlights segments combining elevated churn probability with significant revenue contribution, enabling capital allocation toward the highest financial return retention opportunities
 
 **Revenue Drivers of Customer Churn**
 
 ![image alt](https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Decompostion%20Tree.png)
 
-The decomposition analysis isolates the highest revenue-loss path:
+The decomposition analysis isolates the highest revenue-loss pathway:
 
 Short Term → Electronic Check → Fiber → Early Tenure
+
+This multi-factor intersection represents Northbridge’s most financially exposed churn cluster.
 
 Current exposure:
 
@@ -132,7 +130,6 @@ Current exposure:
 
 - Use churn segmentation to allocate retention budgets efficiently.
 
-- These actions directly address identified revenue exposure segments.
 
 
 
