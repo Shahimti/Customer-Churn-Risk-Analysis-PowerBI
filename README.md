@@ -108,6 +108,12 @@ Short Term → Electronic Check → Fiber → Early Tenure
 
 This multi-factor intersection represents Northbridge’s most financially exposed churn cluster.
 
+## Financial Impact Simulation
+
+![image alt](https://github.com/Shahimti/Customer-Churn-Risk-Analysis-PowerBI/blob/main/images/Projected%20Revenue%20Saved%20.png)
+
+A dynamic what-if churn reduction parameter was implemented to estimate potential revenue recovery.
+
 Current exposure:
 
 - Revenue Lost: 2.05M
