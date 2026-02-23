@@ -38,7 +38,7 @@ This case study was developed to translate subscription data into measurable bus
 
 ## Data Structure & Model Overview
 
-[https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Data_Model.png]
+![image alt][https://github.com/Shahimti/Customer-Churn-Analysis-/blob/main/images/Data_Model.png]
 
 The dataset represents customer-level subscription data enriched with segmentation logic and financial measures.
 
