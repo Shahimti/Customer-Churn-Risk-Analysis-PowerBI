@@ -6,7 +6,7 @@ Live Interactive Dashboard
 
 **Click Here**
 
-1. ## Business Background & Problem Statement
+## Business Background & Problem Statement
 
 Northbridge Communications is a subscription-based telecommunications provider operating under recurring revenue contracts.
 
@@ -36,71 +36,13 @@ Northbridge required a structured analytics solution to:
 
 This case study was developed to translate subscription data into measurable business risk and strategic insight.
 
-2. ## Data Structure & Model Overview
+## Data Structure & Model Overview
 
 [INSERT POWER BI SEMANTIC MODEL SCREENSHOT HERE]
 
 The dataset represents customer-level subscription data enriched with segmentation logic and financial measures.
 
 To better simulate real enterprise-level data conditions, the dataset was refined and restructured to introduce transformation and categorization challenges. These were resolved through Power Query transformations and DAX-based modeling techniques, reflecting real-world data preparation workflows.
-
-### Core Data Categories
-
-**Customer Demographics**
-
-- Gender
-
-- Senior Citizen
-
-- Partner
-
-- Dependents
-
-**Service Features**
-
-- Internet Type (DSL, Fiber, None)
-
-- Online Security
-
-- Device Protection
-
-- Tech Support
-
-- Streaming Services
-
-**Contract & Billing**
-
-- Contract Type (Short Term / Long Term)
-
-- Payment Group (Electronic Check / Automatic / Mailed Check)
-
-- Paperless Billing
-
-**Financial Metrics**
-
-- Monthly Charges
-
-- Total Charges (treated as Lifetime Revenue)
-
-- Churn Status
-
-**Data Preparation & Transformation**
-
-- Removed duplicate and blank customer records
-
-- Standardized categorical fields
-
-- Converted financial columns to numeric formats
-
-- Created tenure buckets (0–1, 1–2, 2–4, 4–6 years)
-
-- Grouped payment methods into behavioral categories
-
-- Classified contracts into short-term and long-term
-
-- Built churn rate, revenue exposure, and segmentation measures
-
-- Implemented what-if financial simulation parameters
 
 3. ## Executive Summary
 
@@ -187,20 +129,6 @@ Current exposure:
 
 - These actions directly address identified revenue exposure segments.
 
-7. ## Assumptions & Limitations
-
-- Total Charges is treated as lifetime revenue.
-
-- Dataset does not include time-series churn events.
-
-- Revenue loss assumes churn leads to revenue discontinuation.
-
-What-if simulation is scenario-based and not predictive modeling.
 
 
 
-
-
-Or resume bullet upgrades aligned with this final version
-
-Your move.
