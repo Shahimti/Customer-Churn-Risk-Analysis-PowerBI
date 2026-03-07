@@ -78,7 +78,7 @@ Long-term contracts demonstrate significantly stronger retention stability.
 
 **Payment Behavior Risk**
 
-![image alt](https://github.com/Shahimti/Customer-Churn-Risk-Analysis-PowerBI/blob/main/images/Churned%20Revenue%20by%20Payment%20Method.png)
+![image alt](https://github.com/Shahimti/Customer-Churn-Risk-Analysis-PowerBI/blob/main/images/Customer%20Churn%20Rate%20by%20Payment%20Method.png)
 
 Electronic check customers show the highest churn rate (44.5%), materially higher than automatic payment users.
 
